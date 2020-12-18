@@ -200,7 +200,7 @@
                 <p class="footer-form-title">Подпишитесь на рассылку</p>
                     <form>
                         <div class="form-shape">
-                            <input class="footer-input-mail" type="text" name="footer-form-name" id="form-mail" >
+                            <input class="footer-input-mail" type="text" name="footer-form-name" placeholder=" " id="form-mail" >
                             <label class="footer-form-name" for="form-mail">E-mail</label>
                             <button type="submit" class="footer-form-btn">
                                 <span class="footer-btn-title">Подписаться</span>
@@ -225,17 +225,17 @@
                     <div class="modal-form-field" >
                         <svg class="modal-form-icon-name"><use href="./symbol-defs.svg#icon-Vector-1-1"></use></svg>
                         <label class="modal-form-label" for="name">Имя</label>
-                        <input type="text" id="name" />
+                        <input class="modal-form-input" name="name" type="text" id="name" />
                     </div>
                     <div class="modal-form-field" > 
                         <svg class="modal-form-icon-tel"><use href="./symbol-defs.svg#icon-Vector-2-1"></use></svg> 
-                        <label class="modal-form-label" for="">Телефон</label>
-                        <input type="tel" id="name" />
+                        <label class="modal-form-label" for="tel">Телефон</label>
+                        <input class="modal-form-input" name="" type="tel" id="tel" />
                     </div>
                     <div class="modal-form-field" >
                         <svg class="modal-form-icon-mail"><use href="./symbol-defs.svg#icon-Vector-3-1"></use></svg>
                         <label class="modal-form-label" for="mail">Почта</label>
-                        <input type="email" id="mail"/>
+                        <input class="modal-form-input" name="mail" type="email" id="mail"/>
                     </div>
                     <div class="modal-form-field form-textarea" >
                         <label class="modal-form-label" for="comment">Комментарий</label>
@@ -243,8 +243,11 @@
                     </div>
                 
                     <div class="modal-policy">
-                        <input type="checkbox" id="policy"/>
-                        <label for="policy">Соглашаюсь с рассылкой и принимаю <a class="modal-policy-link" href="#">Условия договора</a></label>
+                        <label class="modal-policy-label" for="policy">
+                            <input class="checkbox" name="policy" type="checkbox"/>
+                            <span class="checkbox-icon" ></span>
+                            Соглашаюсь с рассылкой и принимаю<a class="modal-policy-link" href="#"> Условия договора</a>
+                        </label>
                     </div>
                     <div class="container-modal-btn"><button class="modal-form-btn" type="submit">Отправить</button></div>
                 </div>
